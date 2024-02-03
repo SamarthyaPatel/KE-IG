@@ -115,12 +115,18 @@ textarea {
 
 .product-number {
     text-align: left;
-    width: 80%;
+    width: 90%;
     font-size: 15px;
     padding: 5px 0px;
     border: none;
     outline: none;
     margin: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
   
 .product-name {
