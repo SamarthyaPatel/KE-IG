@@ -1,0 +1,356 @@
+body {
+    /* background: lightblue; */
+    /* margin: 5vh 7.5vw; */
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+p {
+    margin: 0px; padding: 0px;
+    font-size: 13px;
+}
+
+hr {
+    border-top: 1px dashed #8c8b8b;
+    width: 90%;
+}
+
+
+:disabled {
+    background: white;
+}
+
+/* --------------- */
+
+.upper-main {
+    /* background: beige; */
+    width: 90%;
+    margin: 0px auto;
+}
+
+.company-title-container {
+    /* background-color: beige;  */
+    width: 100%;
+}
+
+.invoice-details-container {
+    margin-top: auto;
+    text-align: left;
+    font-size: 15px;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.invoice-label {
+    display:inline-block;
+    width: 12vh;
+    margin-bottom: 2.5px;
+}
+
+#invoice-number {
+    font-size: 15px;
+    text-align: left;
+    width: 14vh;
+    border: none;
+    outline: none;
+    margin-bottom: 2.5px;
+}
+  
+#invoice-number:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* --------------- */
+
+.bt-input {
+    width: 30vh;
+    text-align: left;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 2.5px;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.bt-input:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* --------------- */
+
+table {
+    table-layout: auto;
+    width: 90%;
+    margin: 0px auto;
+}
+  
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: gray;
+    text-align: left;
+}
+
+td {
+    padding: 5px 0px;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    margin: 0px;
+}
+
+.product-number {
+    text-align: left;
+    width: 80%;
+    font-size: 15px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    margin: auto;
+}
+  
+.product-name {
+    /* width: 90%; */
+    width: 475px;
+    text-align: left;
+    font-size: 15px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    margin: auto;
+    height: 15px;
+}
+  
+.product-name:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9,
+    -11px -11px 22px #ffffff;
+}
+  
+.product-number:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9,
+    -11px -11px 22px #ffffff;
+}
+
+.dashed {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+}
+
+.last-row {
+    margin-top: -10px;
+}
+
+/* Add button */
+
+.add-button {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.add-button:after {
+    content: "";
+    /* background-color: #ffe54c; */
+    background-color: rgb(8, 186, 245);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.add-button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+/* Print Button */
+
+#print-button {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 50px;
+}
+
+#print-button:after {
+    content: "";
+    /* background-color: #ffe54c; */
+    background-color: rgb(8, 71, 245);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+#print-button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+  
+  /* -------------------------------------------------------- */
+  
+.total-container {
+    font-size: 20px;
+    text-align: right;
+    width: 90%;
+    padding: 5px 0px;
+
+    text-transform: uppercase;
+
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: black;
+    margin: auto;
+}
+    
+.total-container input[type=text] {
+    width: 20%;
+    font-size: 20px !important;
+    color: black;
+    text-align: right !important;
+    border: none;
+}
+
+.total-container::after {
+    content: "₹";
+}
+  
+/* ------------------------------------------------------- */
+
+.payment-and-office-container {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.payment {
+    width: 60%;
+}
+
+.office-work {
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stamp-sig-box {
+    height: 80px;
+    width: 80%;
+    border-bottom: 1px black solid;
+}
+
+.payment td, tr {
+    padding: 0px;
+    font-size: 13px;
+}
+
+.payment .header-col {
+    width: 30%;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+
+#attribute {
+    text-align: center;
+}
+
+#attribute a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* --------------- */
+
+.hide-logo input[type="date"]::-webkit-inner-spin-button,
+.hide-logo input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* --------------- */
+
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}

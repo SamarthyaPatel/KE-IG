@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>K Invoice Generator</title>
+    <link rel="icon" href="logo.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex direction-column align-center text-center">
+        <div class="d-flex align-center justify-around company-title-container">
+            <img src="logo.jpg" alt="Logo" width="50px">
+            <p class="uppercase bold" style="font-size: 20px;">Mohanchandra Joshi</p>
+            <img src="logo.jpg" alt="Logo" width="50px">
+        </div>
+        <p>Shop Number 11, M/6 Bhadran Nagar Road 2, Malad (WEST), Mumbai 400064.</p>
+        <p>📞 9869374944</p>
+        <hr>
+        <p class="uppercase">We specialise in comprehensive electrical services, encompassing all types of electrical work.</p>
+    </header>
+    <hr>
+    <main>
+        <div class="upper-main d-flex justify-between" id="upper-main">
+            <div class="bill-to">
+                <p class="uppercase"> <strong> Billed to: </strong> </p>
+                <input type="text" name="" placeholder="Name" class="bt-input"> <br>
+                <input type="text" name="" placeholder="Location" class="bt-input">
+            </div>
+            <div class="invoice-details-container">
+                <p class="invoice-label"> Invoice Number: </p>
+                <input type="number" name="invoice-number" id="invoice-number" placeholder="Invoice Number">
+                <br>
+                <p class="invoice-label"> Invoice Date: </p>
+                <input type="date" name="invoice-number" id="invoice-number">
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="invoice-body">
+
+            <table>
+
+                <thead>
+                    <th style="width: 70%;">DESCRIPTION</th>
+                    <th>UNIT</th>
+                    <th>PRICE</th>
+                    <th style="width: 12%;">AMOUNT</th>
+                </thead>
+
+                <tbody id="table-body">
+                    <tr class="single-row">
+                        <td><textarea placeholder="Title" class="product-name" wrap="soft" style="height: 15px;"></textarea></td>
+                        <td><input type="number" placeholder="0" name="unit" class="unit product-number" id="unit" onkeyup="getInput()"></td>
+                        <td><input type="number" placeholder="0" name="price" class="price product-number" id="price" onkeyup="getInput()"></td>
+                        <td><input type="number" placeholder="0" name="amount" class="amount product-number" id="amount" disabled></td>
+                    </tr>
+            
+                    <tr class="last-row button">
+                        <td class="dashed">
+                            <button class="add-button" id="add-row"> Add </button>
+                            <button id="print-button"> Print </button>
+                        </td>
+                        <td class="dashed"></td>
+                        <td class="dashed"></td>
+                        <td class="dashed"></td>
+                        <td class="dashed"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br>
+            <div class="total-container">Net Payable Amount: <input type="text" placeholder="0.00" name="net-total" class="total" id="net-total" disabled></div>
+            <div class="dashed" style="margin-top: 20px; width: 90%; margin-left: auto; margin-right: auto;"></div>
+        </div>
+
+        <div class="payment-and-office-container d-flex space-between">
+            <div class="payment">
+                <p class="uppercase bold">Payment Instructions</p>
+                <p class="uppercase" style="margin-top: 5px;">Cheque: </p>
+                <p> Kindly issue a cheque payment to "Mohanchandra Joshi". </p>
+
+                <p style="margin-top: 10px;" class="uppercase">GPay: </p>
+                <img src="gpay.jpeg" alt="GPay QR Code" width="200px">
+            </div>
+            <div class="office-work d-flex">
+                <div class="stamp-sig-box"></div>
+                <p>Authorised Signature</p>
+            </div>
+        </div>
+        
+        <div id="attribute">
+            <a href="https://www.vecteezy.com/free-vector/lord-ganesha-logo" target="_blank">Logo by Vecteezy</a>
+        </div>
+    </main>
+
+    <footer>
+        <br>
+        <h2 class="text-center" style="font-family: 'Tangerine', cursive; font-style: normal; font-size: 30px;"> Thank you for your business. </h2>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
