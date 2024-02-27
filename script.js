@@ -42,11 +42,16 @@ getInput =()=> {
 overallSum =()=> {
     var arr = document.getElementsByName("amount");
     var total = 0;
+    var advance = 0;
+    var net = 0;
     for(var i = 0; i < arr.length; i++) {
         if(arr[i].value) {
             total += +arr[i].value;
         }
-        document.getElementById("net-total").value = total.toLocaleString('en-IN');
+        document.getElementById("total").value = total.toLocaleString('en-IN');
+        advance = document.getElementById("advance").value;
+        net = total - advance;
+        document.getElementById("net-total").value = net.toLocaleString('en-IN');
     }
 }
 
