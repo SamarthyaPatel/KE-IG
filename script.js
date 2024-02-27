@@ -86,7 +86,7 @@ print_button.addEventListener("click", () => {
 
 // Show buttons
 function handleShortcut(event) {
-    if (event.key === "B") {
+    if (event.ctrlKey && event.key === "b") {
         event.preventDefault();
         var buttons = document.getElementsByClassName("button");
 
